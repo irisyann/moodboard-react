@@ -87,7 +87,7 @@ form {
 }
 
 .Gallery {
-  padding: 50px 200px;
+  padding: 50px 20px;
 
 }
 
@@ -129,6 +129,11 @@ form {
   #photosNotFound {
     margin: 50px;
     padding: 50px;
+  }
+
+  .Gallery {
+    padding: 50px 200px;
+  
   }
 
 }
