@@ -1,12 +1,20 @@
-import Picture from "./Picture";
+import Gallery from 'react-grid-gallery';
 
 const Generator = (props) => {
 
     const images = props.images.map((image) => {
-        return <Picture key={image.id} image={image}/>;
+        return ({
+            src: image.src.portrait,
+            thumbnail: image.src.medium,
+            thumbnailWidth: image.width,
+            thumbnailHeight: image.height,
+            caption: "Photo from Pexels"
+        });
     })
     
-    return <div className="Gallery">{images}</div>;
+    return (
+        <Gallery images={images} />
+    );
 
 }
 

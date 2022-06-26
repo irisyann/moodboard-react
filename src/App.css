@@ -1,21 +1,52 @@
-.App {
+html {
   text-align: center;
-  background-color: #282c34;
   padding: 20px;
+  animation: backgroundColourAnimated 8s infinite;
+  min-height: 100vh;
+}
+
+@keyframes backgroundColourAnimated {
+  0% {
+    background: #ee6055;
+  }
+  25% {
+    background: #60d394;
+  }
+  50% {
+    background: #aaf683;
+  }
+  75% {
+    background: #ffd97d;
+  }
+  100% {
+    background: #ff9b85;
+  }
 }
 
 .App-header {
-  min-height: 100vh;
-  color: white;
+  color: #282c34;
 }
 
 .Media-headerGif {
-  margin-top: 100px;
-  width: 50px;
+  margin-top: 0px;
+  width: 100px;
 }
 
 h1, h4, h5, p {
   margin: 10px;
+}
+
+input[type=text] {
+  border-width: 0px;
+  border-radius: 10px;
+  padding: 5px 20px;
+  width: 80%;
+  height: 30px;
+  transition: outline 0.1s ease-in-out;
+}
+
+input[type=text]:focus { 
+  outline: #282c34 solid 2px;
 }
 
 .Instruction {
@@ -26,17 +57,38 @@ form {
   margin-top: 30px;
 }
 
-input {
-  width: 80%;
-  height: 30px;
+.Button {
+  color: white;
+  border-radius: 10px;
+  outline: 2px;
+  margin-left: 10px;
+  margin-top: 10px;
+  transition: all 0.1s ease-in-out;
+}
+
+#submitButton {
+  background-color: #282c34;
+  padding: 10px 20px;
+}
+
+#submitButton:focus { 
+  background-color: rgb(20, 21, 23);
+  outline: #ffffff solid 2px;
+}
+
+#surpriseButton {
+  background-color: #ffcf56;
+  padding: 9px 20px;
+}
+
+#surpriseButton:focus {
+  background-color: #ffbf1c;
+  outline: #ffffff solid 2px;
 }
 
 .Gallery {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 50px;
-  flex-wrap: wrap;
+  padding: 50px 200px;
+
 }
 
 .Gallery img {
@@ -58,4 +110,11 @@ input {
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+@media only screen and (min-width: 992px) {
+  input[type=text] {
+    width: 30%;
+  }
+
 }
