@@ -10,16 +10,16 @@ html {
     background: #ee6055;
   }
   25% {
-    background: #60d394;
+    background: #ff9b85;
   }
   50% {
-    background: #aaf683;
+    background: #ffd97d; 
   }
   75% {
-    background: #ffd97d;
+    background: #85ff7c;
   }
   100% {
-    background: #ff9b85;
+    background: #85ffff;
   }
 }
 
