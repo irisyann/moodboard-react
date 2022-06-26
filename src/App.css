@@ -1,7 +1,6 @@
 html {
   text-align: center;
-  padding: 20px;
-  animation: backgroundColourAnimated 8s infinite;
+  animation: backgroundColourAnimated 8s infinite alternate;
   min-height: 100vh;
 }
 
@@ -24,6 +23,7 @@ html {
 }
 
 .App-header {
+  padding: 20px;
   color: #282c34;
 }
 
@@ -96,6 +96,15 @@ form {
   margin: 10px;
 }
 
+#photosNotFound {
+  margin: 20px;
+  margin-top: 50px;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.437);
+  border-radius: 50px;
+  display: none;
+}
+
 .Loader {
   border: 10px solid #f3f3f3; /* Light grey */
   border-top: 10px solid #3498db; /* Blue */
@@ -115,6 +124,11 @@ form {
 @media only screen and (min-width: 992px) {
   input[type=text] {
     width: 30%;
+  }
+
+  #photosNotFound {
+    margin: 50px;
+    padding: 50px;
   }
 
 }

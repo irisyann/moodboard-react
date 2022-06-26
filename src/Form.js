@@ -33,6 +33,7 @@ class Form extends React.Component {
 
     handleSurprise = (e) => {
         this.setState({ surprise: true});
+        this.setState({ keyword: ''});
         this.props.onSurprise(true);
 
     }
