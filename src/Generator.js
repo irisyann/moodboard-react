@@ -9,7 +9,7 @@ const Generator = (props) => {
             thumbnail: image.src.medium,
             thumbnailWidth: image.width,
             thumbnailHeight: image.height,
-            caption: "Photo by " + image.photographer + " on Pexels"
+            caption: "Photo by " + image.photographer + " on Pexels (www.pexels.com)"
         });
     })
     
