@@ -10,8 +10,6 @@ Moodboard React is a simple and easy-to-use moodboard application built using Re
 ## Contributing
 If you would like to contribute to this project, please fork the repository and create a pull request. 
 
-## Try it out
-https://moodboard-react-by-peanuto.netlify.app/
-
 ## Dependencies
 - [React Grid Gallery by Ben Howell](https://benhowell.github.io/react-grid-gallery/)
+- [Pexels API](https://www.pexels.com/)
